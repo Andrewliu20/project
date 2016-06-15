@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++9431" : {
+
+    },
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++9431" : 0,
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75B24B94-B297-4ADD-A013-55D34078F01D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++9431" : "ShopLife\/ShopLife\/Other\/Lib\/MD5\/",
+    "d3b33442-203a-4b98-a023-85834f8d8bd5++4837" : "ShopLife0519\/ShopLife\/Other\/Lib\/MD5\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShopLife",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShopLife.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.88.8\/qfproj",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d3b33442-203a-4b98-a023-85834f8d8bd5++4837"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.88.8\/qfproj",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d3b33442-203a-4b98-a023-85834f8d8bd5++9431"
+    }
+  ]
+}

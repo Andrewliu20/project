@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="189" id="KGk-i7-Jjw" customClass="LYLBaseCell">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qln-dD-uVX">
+                        <rect key="frame" x="10" y="8" width="352" height="173"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qln-dD-uVX" secondAttribute="trailing" constant="10" id="9tW-YK-HUx"/>
+                    <constraint firstItem="qln-dD-uVX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GOf-Zf-oWr"/>
+                    <constraint firstAttribute="bottom" secondItem="qln-dD-uVX" secondAttribute="bottom" constant="5" id="fy0-Gc-XhX"/>
+                    <constraint firstItem="qln-dD-uVX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="opJ-AY-jOr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageInfo" destination="qln-dD-uVX" id="pIg-J5-Her"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="360.5"/>
+        </tableViewCell>
+    </objects>
+</document>

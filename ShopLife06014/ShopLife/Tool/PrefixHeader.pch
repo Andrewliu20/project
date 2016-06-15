@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  ShopLife
+//
+//  Created by zhuzheng on 16/5/18.
+//  Copyright © 2016年 andrewliu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Header.h"
+
+
+#endif /* PrefixHeader_pch */
