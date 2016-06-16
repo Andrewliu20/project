@@ -233,41 +233,47 @@
         
         LYLGoodModel *model = self.dataSource[pahtIndex.item];
         
-        
         [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:model.imageList
          ];
         
+         [UMSocialData defaultData].extConfig.title = model.title;
         //分享到QQ好友
-        [UMSocialData defaultData].extConfig.qqData.title = model.title;
-
         [UMSocialData defaultData].extConfig.qqData.url = model.url;
         
-//        //分享到QQ空间
-      
         [UMSocialData defaultData].extConfig.qzoneData.title = model.title;
-        [UMSocialData defaultData].extConfig.qzoneData.url= model.url;
+        [UMSocialData defaultData].extConfig.qzoneData.url = model.url;
         
-       
         //分享到微博
-        [UMSocialData defaultData].extConfig.sinaData.shareText = [NSString stringWithFormat:@"%@ %@",model.shopName,model.url];
+        [UMSocialData defaultData].extConfig.sinaData.shareText = [NSString stringWithFormat:@"%@ %@",model.title,model.url];
         
-        
-        //分享到微信好友
-        [UMSocialData defaultData].extConfig.wechatSessionData.title = model.title;
-        [UMSocialData defaultData].extConfig.wechatSessionData.url = model.url;
-        
-        //分享到微信朋友圈
-//        [UMSocialData defaultData].extConfig.wechatTimelineData.title = model.title;
-//        [UMSocialData defaultData].extConfig.wechatTimelineData.url = model.url;
+//        //分享到微信好友
+        [UMSocialData defaultData].extConfig.wechatTimelineData.url = model.url;
+        [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeApp;
+//        [UMSocialData defaultData].extConfig.wechatSessionData.url = model.url;
         
         [UMSocialSnsService presentSnsIconSheetView:self
                                              appKey:@"575a8a4667e58e1807002240"
                                           shareText:model.shopName
-                                         shareImage:nil
+                                         shareImage:[UIImage imageNamed:model.imageList]
                                     shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
                                            delegate:self];
         
       
+
+        
+
+//        
+//        
+
+//        
+//
+//        
+//        [UMSocialSnsService presentSnsIconSheetView:self
+//                                             appKey:@"575a8a4667e58e1807002240"
+//                                          shareText:model.shopName
+//                                         shareImage:[UIImage imageNamed:@"iocn-29"]
+//                                    shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
+//                                           delegate:self];
 
     }
     

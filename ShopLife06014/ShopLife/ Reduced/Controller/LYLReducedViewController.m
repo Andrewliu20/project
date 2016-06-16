@@ -11,13 +11,10 @@
 #import "LYLChannelCell.h"
 #define VIEWWIDTH self.view.frame.size.width
 
-@interface LYLReducedViewController ()<UITableViewDelegate,UITableViewDataSource>
-{
-    NSArray *descArr;
-}
+@interface LYLReducedViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>
+
 
 @property (nonatomic,strong) NSMutableArray *dataSource;
-
 
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -34,13 +31,15 @@
     
     _page = 0;
     self.navigationItem.title = @"捡宝";
-
+    
     [self initTable];
     
     [self loadData];
     
     [self addRefresh];
 }
+
+
 
 #pragma mark -- 集成下来刷新和上拉加载
 
@@ -121,48 +120,58 @@
     
     _tableView.delegate = self;
     
-    //去除多余的cell中的道道
+//    //去除多余的cell中的道道
     self.tableView.tableFooterView = [[UIView alloc]init];
     
     [self.view addSubview:_tableView];
-    
-    self.tableView.rowHeight = 100;
+//    
+//    //让cell的高度动态变化
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    //设置cell的预估行高
+//    self.tableView.estimatedRowHeight = 700;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"LYLChannelCell" bundle:nil] forCellReuseIdentifier:@"channelCell"];
     
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-////    if (descArr.count == 4) {
-////        return 750;
-////    }else
-////    {
-////        return 700;
-////    }
-//    
-//    
-//  //  计算cell的中text的高度
-//    
-//    
-//    Itemgoods *itemGoods = [self.dataSource[indexPath.row] itemgoods];
-//    
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    
+    
+    
+    Itemgoods *itemGoods = [self.dataSource[indexPath.row] itemgoods];
+     NSArray *descArr = [itemGoods.attr componentsSeparatedByString:@"\r\n\r\n"];
+    
 //    if (itemGoods.attr != nil) {
 //        
 //        NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:17]};
-//         CGSize size = [itemGoods.attr boundingRectWithSize:CGSizeMake(VIEWWIDTH-20, 0) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+//         CGSize size = [itemGoods.attr boundingRectWithSize:CGSizeMake(VIEWWIDTH-70, 0) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
 //        
 //       
 //        [_heightSizeArray addObject:[NSString stringWithFormat:@"%lf",size.height]];
-//        
-//        
+//   
 //    }
-//    
-//    
-//    
-//    return 450 + [_heightSizeArray[indexPath.row] floatValue];
-//    
-//}
+    
+    if (descArr.count == 3) {
+        return 580;
+    }else if (descArr.count == 4){
+        
+        return 750;
+       
+    }else if(descArr.count == 2){
+        return 530;
+        
+    }else if(descArr.count == 5){
+        return 700;
+        
+    }else{
+        return 450;
+    }
+
+
+    
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

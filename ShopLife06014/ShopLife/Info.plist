@@ -42,7 +42,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>icon-29@2x</string>
 			<key>CFBundleURLName</key>
-			<string>Qzone</string>
+			<string>QQ</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>tencent1105461006</string>

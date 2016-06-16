@@ -13,6 +13,8 @@
 
 @interface LYLChannelCell : UITableViewCell
 
+
+@property (nonatomic,assign) CGFloat height;
 - (void)setModel:(Itemgoods *)model andVC:(LYLReducedViewController *)homeVC;
 
 @end

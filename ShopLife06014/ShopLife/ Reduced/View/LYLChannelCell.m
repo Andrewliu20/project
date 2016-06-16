@@ -10,7 +10,7 @@
 #import "LYLGoodDescViewController.h"
 #import "LYLTaoBaoticketViewController.h"
 
-@interface LYLChannelCell()
+@interface LYLChannelCell()<UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -82,10 +82,9 @@
 //    self.descWebView.backgroundColor = [UIColor redColor];
     [self.descWebView loadHTMLString:_descHtmlStr baseURL:nil];
     
-   
+   self.descWebView.scrollView.scrollEnabled = NO;
     
     self.descWebView.userInteractionEnabled = NO;
-    
     //对图片添加手势
     
     self.goodImage.userInteractionEnabled = YES;
@@ -131,6 +130,7 @@
     
     
 }
+
 
 
 //字符串转字典

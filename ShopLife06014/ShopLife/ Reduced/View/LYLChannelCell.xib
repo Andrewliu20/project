@@ -8,11 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="KGk-i7-Jjw" customClass="LYLChannelCell">
-            <rect key="frame" x="0.0" y="0.0" width="356" height="762"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" rowHeight="772" id="KGk-i7-Jjw" customClass="LYLChannelCell">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="772"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="356" height="761"/>
+                <rect key="frame" x="0.0" y="0.0" width="356" height="771"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h44-fU-1az" userLabel="title">
@@ -29,7 +29,7 @@
                             <constraint firstAttribute="height" constant="300" id="2l4-ve-hH6"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xzzbk_featured_opengood@2x" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-6O-LnO">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="xzzbk_featured_opengood@2x" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-6O-LnO">
                         <rect key="frame" x="278" y="696" width="70" height="34"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="MFo-sH-uco"/>
@@ -41,14 +41,14 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xzzbk_featured_getcoupon@2x" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-XL-lsy">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="xzzbk_featured_getcoupon@2x" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-XL-lsy">
                         <rect key="frame" x="188" y="696" width="70" height="34"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="VPY-Pd-Pij"/>
                             <constraint firstAttribute="height" constant="34" id="wlG-fD-Dnq"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-GJ-Gdt">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-GJ-Gdt">
                         <rect key="frame" x="8" y="703" width="80" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="FHC-Xf-lhU"/>
@@ -58,19 +58,6 @@
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHu-qC-2tN">
-                        <rect key="frame" x="8" y="386" width="340" height="307"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="300" id="oyT-uN-twO"/>
-                            <constraint firstAttribute="height" constant="300" id="s5e-eD-2FU"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="oyT-uN-twO"/>
-                                <exclude reference="s5e-eD-2FU"/>
-                            </mask>
-                        </variation>
-                    </webView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7R-gt-wF0" userLabel="price">
                         <rect key="frame" x="8" y="47" width="100" height="21"/>
                         <constraints>
@@ -81,6 +68,21 @@
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHu-qC-2tN">
+                        <rect key="frame" x="8" y="388" width="340" height="307"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="500" id="XCM-Qw-uc2"/>
+                            <constraint firstAttribute="height" constant="300" id="oyT-uN-twO"/>
+                            <constraint firstAttribute="height" constant="300" id="s5e-eD-2FU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XCM-Qw-uc2"/>
+                                <exclude reference="oyT-uN-twO"/>
+                                <exclude reference="s5e-eD-2FU"/>
+                            </mask>
+                        </variation>
+                    </webView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Y6F-XL-lsy" firstAttribute="centerY" secondItem="Wj2-GJ-Gdt" secondAttribute="centerY" id="0yB-iZ-XPj"/>
@@ -127,7 +129,7 @@
                 <outlet property="titleLabel" destination="h44-fU-1az" id="mAe-vI-QiT"/>
                 <outlet property="upPriceLable" destination="Wj2-GJ-Gdt" id="UwA-5K-Zc5"/>
             </connections>
-            <point key="canvasLocation" x="436" y="564"/>
+            <point key="canvasLocation" x="436" y="569"/>
         </tableViewCell>
     </objects>
     <resources>
